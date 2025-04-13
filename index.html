@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Intagram</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                    <div class="d-flex gap-1">
+                        <i class="fa-brands fa-instagram fa-xl d-flex align-items-center mb-2"></i>
+                        <h5 class="navbar-brand">Instagram</h5>
+                    </div>   
+                    <div class="d-flex justify-content-between justify-content-lg-end w-100 gap-1">
+                        <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Create a new post
+                </button>               
+                <!-- Modal -->
+                 <form>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Caption:
+                            </div>
+                            <textarea class="textarea w-75 mx-3"></textarea>
+                            <div class="m-3">
+                                <label class="btn btn-outline-secondary p-1 px-2 me-1">
+                                    <i class="fa-solid fa-camera text-dark"></i>
+                                    <input type="file" class="d-none">
+                                </label>
+                                <label class="btn btn-outline-secondary p-1 px-2">
+                                <i class="fa-solid fa-location-dot text-dark"></i>
+                                </label>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between justify-content-md-end w-100">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                        </div>
+                  </div> 
+                 </form>               
+                <!--Dropdown-->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div> 
+                </div>                    
+            </div>
+        </nav>
+        <nav>
+            <div class="nav nav-tabs m-5 d-flex justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                <i class="fa-solid fa-table-cells"></i>
+              </button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                <i class="fa-solid fa-square"></i>
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/20200320_131748.jpg" style="width: 400px" class="img-fluid mx-auto" alt="Un gato negro mirando hacia ti">
+                        </div>
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/20201101_135142.jpg" style="width: 400px" class="img-fluid" alt="Dos gatitos abrazados">
+                        </div>
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/IMG20230301190735.jpg" style="width: 400px" class="img-fluid" alt="Una gata bostezando">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/20210315_140331.jpg" style="width: 400px" class="img-fluid mx-auto" alt="Dos gatos encima de un modem">
+                        </div>
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/Sally durmiendo en un cojin.jpg" style="width: 400px" class="img-fluid" alt="Una gatita durmiendo">
+                        </div>
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/IMG20221229122635.jpg" style="width: 400px" class="img-fluid" alt="Una gata descansando encima de un modem">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/20201129_051201.jpg" style="width: 400px" class="img-fluid mx-auto" alt="Dos gatitos durmiendo plácidamente">
+                        </div>
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/20210619_120733.jpg" style="width: 400px" class="img-fluid" alt="Un gato estirado en su sofá">
+                        </div>
+                        <div class="col-lg-4 text-center mb-5 px-1">
+                            <img src="/img2/IMG20230615130820.jpg" style="width: 400px" class="img-fluid" alt="Una gata durmiendo como un caracol">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="container px-3">
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>Ilydan en la sombra!</h4>
+                              </div>
+                              <div>
+                                18/08
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Ilydan.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Un perro sentado a la sombra">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>76 Likes</strong></p>
+                                <p>Hace mucho calor y hemos decidido para a descansar! <i class="fa-regular fa-face-tired"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>Shiva comiendo yogur <i class="fa-thin fa-face-grin-hearts"></i></h4>
+                              </div>
+                              <div>
+                                14/08
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Shiva comiendo.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Una gata comiendo un yogur con cuchara">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>113 Likes</strong></p>
+                                <p>Y yo con intolerancia a la lactosa...!! <i class="fa-regular fa-face-grin-tears"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>Ojazos!!!</h4>
+                              </div>
+                              <div>
+                                28/07
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Sally ojazos.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Una gatita blanca con ojos azules">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>2.364 Likes</strong></p>
+                                <p><i class="fa-regular fa-face-grin-hearts"></i> <i class="fa-regular fa-gem"></i><i class="fa-regular fa-gem"></i> <i class="fa-regular fa-face-grin-hearts"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>Al final se querrán...</h4>
+                              </div>
+                              <div>
+                                16/07
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Simba y Sally.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Un gatito mirando a otro">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>111 Likes</strong></p>
+                                <p>Poco a poco Simba la va aceptando! Tampoco le queda otra... <i class="fa-regular fa-face-grin-tongue-squint"></i> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>Aish mi Rocky <i class="fa-solid fa-heart"></i></h4>
+                              </div>
+                              <div>
+                                02/04
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Rocky.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Un perrito mirando a la cámara">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>59 Likes</strong></p>
+                                <p>Qué bonitoOoOoOo!!! <i class="fa-regular fa-face-tired"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>A dormir!!!</h4>
+                              </div>
+                              <div>
+                                15/03
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Gatos en la cama.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Un perro sentado a la sombra">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>1.294 Likes</strong></p>
+                                <p>Si no es así, no quiero nada!!!</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>Ona siendo Ona <i class="fa-regular fa-face-kiss-wink-heart"></i></h4>
+                              </div>
+                              <div>
+                                27/02
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Ona durmiendo.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Un perro sentado a la sombra">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>419 Likes</strong></p>
+                                <p>No sé si está dormida o burlándose de mí. <i class="fa-regular fa-face-sad-tear"></i> ¿Tú qué opinas? <i class="fa-regular fa-message"></i> <i class="fa-regular fa-message"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card text-center mb-5 p-0">
+                            <div class="card-header d-flex justify-content-between">
+                              <div>
+                                <h4>Hola!!! <i class="fa-regular fa-hand-peace"></i> <i class="fa-regular fa-hand-peace"></i></h4>
+                              </div>
+                              <div>
+                                18/02
+                              </div>
+                            </div>
+                            <div class="card-body text-center p-0">
+                              <img src="/img2/Patrocinado por Lidl.jpg" class="img-fluid-100 w-100" style="object-fit: cover;" alt="Un chico vestido de Lidl">
+                            </div>
+                            <div class="card-footer text-body-dark text-start">
+                                <p class="mb-0"><strong>3.4M Likes</strong></p>
+                                <p>Hola!! Te gustaría conocer a mis mascotas?? Sígueme y te muestro lo bonito que es tener amigos peludos!! Y de paso, si puedes hacer que este post tenga más like que el de CR7... Gracias!! <i class="fa-regular fa-futbol"></i> <i class="fa-regular fa-face-kiss-wink-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
